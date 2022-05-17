@@ -345,9 +345,9 @@ new BlackLuckIDSPlayer[MAX_PLAYERS char];
 
 #define randomEx(%0,%1) (%0+random(%1-%0))
 
-new Mode_City[24] = "Perfect";
-new Mode_City_Caps[24] = "PERFECT";
-//new OPT_NAME[128] = "Arizona Role Play | Perfect";
+new Mode_City[24] = "samp-x";
+new Mode_City_Caps[24] = "samp-x.ru";
+//new OPT_NAME[128] = "Arizona Role Play | SAMP-X";
 
 new bool:DEBUG_ON = false;
 
@@ -2057,7 +2057,7 @@ new HitchQuestion[][htQuestions] =
 /*-------- [ Список администраторов с фулл доступом ] --------*/
 new FullDostupList[][] =
 {
-	{"Empire_Bay"}
+	{"Mr_Wolf"}
 };
 
 /*-------- [ Система контейнеров ] --------*/
@@ -20860,7 +20860,7 @@ stock ShowPlayer_AntiCheatSettings(playerid)
     }
     if(next) strcat(str_2, ""AC_DIALOG_NEXT_PAGE_TEXT"\n");
     if(page > 1) strcat(str_2, AC_DIALOG_PREVIOUS_PAGE_TEXT);
-   	return SPD(playerid, DIALOG_ANTICHEAT_SETTINGS, DIALOG_STYLE_TABLIST_HEADERS, !"PERFECT-AC "NEX_AC_VERSION" SAMP 0.3.7", str_2, !"Выбрать", !"Отмена");
+   	return SPD(playerid, DIALOG_ANTICHEAT_SETTINGS, DIALOG_STYLE_TABLIST_HEADERS, !"SAMP-X-AC "NEX_AC_VERSION" SAMP 0.3.7", str_2, !"Выбрать", !"Отмена");
 }
 stock ShowPlayer_AntiCheatEditCode(playerid, code)
 {
@@ -30522,7 +30522,7 @@ public OnGameModeInit()
 	SetNameTagDrawDistance(30.0);
    	ShowPlayerMarkers(2);
    	SetGravity(0.008);
-   	AddServerRule("developer", "Axel_Murphy");
+   	AddServerRule("developer", "Mr_Wolf");
    	Weather = 2;
 	//=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 	HideMapZone = GangZoneCreate(-3000,-3000,3000,3000);
